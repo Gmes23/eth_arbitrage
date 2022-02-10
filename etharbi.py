@@ -155,7 +155,7 @@ def shortest_path_bellman_ford(*, graph, start, end):
             gas_price = graph[head][tail]
             
             print(f" {head} --> ( {gas_price} wei ) --> {tail} ")
-    return best_weight, best_path
+    return f" best gas {best_weight} gas, best path {best_path}"
 
 
 # shortest_path_bellman_ford(
